@@ -1,0 +1,52 @@
+.logo-img{
+    height: 70px;
+    width: 70px;
+    
+}
+.navbar-brand-logo{
+    z-index: 5000 !important;
+    margin-left: 50px !important;
+}
+.navabar-root{
+    background-color: transparent !important;
+    z-index: 5000 !important;
+}
+.navbar-link{
+    color: white !important;
+    font-size: 22px !important;
+    text-transform: capitalize !important;
+    z-index: 5000 !important;
+    margin-right: 50px !important;
+}
+.toggler{
+    z-index: 5000 !important;
+}
+.nav-collapse{
+    background-color: transparent !important; 
+}
+.nav-white{
+    background-color: white !important;
+    .navbar-link{
+        color: black !important;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-brand-logo{
+        margin-left: 20px !important;
+    }
+    .navbar-link{
+        margin-right: 20px !important;
+        
+    }
+}
+@media screen and (max-width: 405px) {
+    .navbar-brand-logo{
+        margin-left: 0px !important;
+    }
+    .navbar-link{
+        margin-right: 0px !important;
+        
+    }
+}

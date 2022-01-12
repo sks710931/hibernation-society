@@ -1,0 +1,49 @@
+.banner-container{
+    background-image: url("../assets/images/Banner.png");
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    margin-top: -100px;
+    padding: 0px !important;
+    z-index: -5000 !important;
+    .banner-box{
+        background-color: black;
+        opacity: 0.4;
+        height: 100%;
+    }
+    .banner-over{
+        height: 100%;
+        margin-top: -650px;
+        width: 100%;
+        backdrop-filter: brightness(0.8);
+        .banner-text{
+            color: white;
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 60px;
+        }
+        .banner-alt-text{
+            color: white;
+            font-size: 24px;
+            .icon-btn{
+                color: white;
+                img{
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner-container{
+        margin-top: -150px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .banner-text{
+        
+        font-weight: 600 !important;
+        font-size: 40px !important;
+    }
+}
