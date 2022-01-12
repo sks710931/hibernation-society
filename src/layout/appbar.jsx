@@ -1,6 +1,6 @@
 import { Box, Button  } from "@mui/material";
 import React, { useState, useEffect } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 import logo from "../assets/images/logo.jpg";
 import "./appbar.scss";
 const Appbar = () => {
