@@ -1,3 +1,4 @@
+
 import { Box, Button  } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { Navbar, Container } from "react-bootstrap";
@@ -15,6 +16,7 @@ const Appbar = () => {
         setActiveClass(false);
       }
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Navbar

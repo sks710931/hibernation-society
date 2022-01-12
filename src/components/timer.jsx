@@ -3,13 +3,13 @@ import "./timer.scss";
 import { useTimer } from "react-timer-hook";
 
 const getTime = () => {
-  const datum = new Date(Date.UTC(2022, 0, 28, 11, 0, 0));
+  //const datum = new Date(Date.UTC(2022, 0, 28, 11, 0, 0));
   //return datum.getTime();
   return Date.now() + 60000;
 };
 
 export const Timer = ({onComplete}) => {
-  const { seconds, minutes, hours, days, isRunning, start } = useTimer({
+  const { seconds, minutes, hours, days, isRunning } = useTimer({
     expiryTimestamp: getTime(),
     onExpire: () => onComplete(true),
   });
