@@ -12,8 +12,8 @@ import "./images.scss";
 
 export const Images = () => {
   return (
-    <div className="images-container">
-      <Container fluid>
+    <div style={{backgroundColor:"white"}} className="images-container">
+      <Container  fluid>
         <Row className="nft-row">
           <Col md="6" sm="12" lg="3" className="nft-col">
             <img src={img1} alt="Bear 1" />
