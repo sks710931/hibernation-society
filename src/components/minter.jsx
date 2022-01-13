@@ -46,7 +46,7 @@ export const Minter = () => {
                 Connect Wallet
               </Button>
               <span>
-                YOU'RE ABOUT TO MINT {mints} HIBERNATION SOCIETY BEAR NFT FOR {mints * price} MATIC + GAS FEE
+                YOU'RE ABOUT TO MINT {mints} HIBERNATION BEAR NFT FOR {mints * price} MATIC + GAS FEE
               </span>
             </div>
           </div>
