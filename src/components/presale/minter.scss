@@ -1,0 +1,100 @@
+.minter-container {
+  height: 292px;
+  background-color: #211f1f;
+  border-top: 1px solid rgb(107, 107, 107);
+  height: 40vh;
+}
+.minter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .mint-counter {
+    color: white;
+    font-size: 22px;
+    b {
+      color: #0348d4;
+    }
+  }
+  .minter-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .mint-select-container {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 200px;
+      margin-right: 20px;
+      .mint-selector {
+        height: 60px;
+        width: 200px;
+        border: 4px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        .icon {
+          color: white;
+        }
+        .mint-number {
+          color: white;
+          font-size: 24px;
+          font-weight: 600;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+      }
+    }
+    .mint-button-container {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 400px;
+      margin-left: 20px;
+      .connect-btn {
+        height: 60px;
+        width: 400px;
+        background-color: white !important;
+        color: black;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 500;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .minter-row {
+    flex-direction: column !important;
+  }
+  .minter-container {
+    height: 400px;
+  }
+  .mint-button-container {
+    margin-bottom: 10px;
+  }
+  .mint-select-container {
+    margin-bottom: 10px;
+  }
+}

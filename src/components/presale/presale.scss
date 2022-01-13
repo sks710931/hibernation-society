@@ -1,0 +1,24 @@
+.presale-banner-container{
+    height: 400px;
+    background-color: black;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: white;
+        font-weight: 400 !important;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .presale-banner-container{
+        margin-top: -150px;
+    }
+}
+
+.presale-content{
+    padding-bottom: 100px;
+}
