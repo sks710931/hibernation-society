@@ -6,6 +6,11 @@
 .navbar-brand-logo{
     z-index: 5000 !important;
     margin-left: 50px !important;
+    span{
+        font-size: 26px ;
+        margin-left: 20px;
+        color: white;
+    }
 }
 .navabar-root{
     background-color: transparent !important;
@@ -29,6 +34,14 @@
     .navbar-link{
         color: black !important;
         
+    }
+    .navbar-brand-logo{
+        
+        span{
+            font-size: 26px !important;
+            margin-left: 20px;
+            color: black;
+        }
     }
 }
 

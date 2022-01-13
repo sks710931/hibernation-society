@@ -27,6 +27,7 @@ const Appbar = () => {
       <Container fluid>
         <Navbar.Brand className="navbar-brand-logo" href="#">
           <img className="logo-img" src={logo} alt="" />
+          <span>Hibernation Society</span>
         </Navbar.Brand>
 
         
@@ -36,6 +37,9 @@ const Appbar = () => {
             </Button>
             <Button className="navbar-link" href="#action2">
               Members
+            </Button>
+            <Button className="navbar-link" href="#action2">
+              Presale
             </Button>
           </Box>
       </Container>
