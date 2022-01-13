@@ -1,0 +1,13 @@
+.images-container{
+    padding-top: 6px;
+    .nft-row{
+        padding: 3px;
+        .nft-col{
+            padding: 6px;
+            padding-top: 0px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
