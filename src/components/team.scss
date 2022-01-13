@@ -1,0 +1,37 @@
+.team-container {
+  background-color: #211f1f;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .teambox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    h1 {
+      color: white;
+      margin-bottom: 25px;
+    }
+    .team-card {
+      background-color: #474141;
+      padding: 50px;
+      border: 2px solid #797575;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 250px;
+        border-radius: 50%;
+      }
+      h4{
+          margin-top: 20px;
+          color: white;
+          font-weight: 300;
+      }
+      span{
+          color: white;
+      }
+    }
+  }
+}
