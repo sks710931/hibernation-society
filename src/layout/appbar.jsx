@@ -32,6 +32,9 @@ const Appbar = () => {
 
         
           <Box display="flex" flexDirection="row" alignItems="center" justifyContent="center" >
+          <Button className="navbar-link" href="#action1">
+              Home
+            </Button>
             <Button className="navbar-link" href="#action1">
               #Storywall
             </Button>
