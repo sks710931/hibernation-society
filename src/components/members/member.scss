@@ -1,0 +1,26 @@
+.member-banner-container{
+    height: 400px;
+    background-color: black;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: white;
+        font-weight: 400 !important;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .member-banner-container{
+        margin-top: -150px;
+    }
+}
+
+.members-content{
+    height: 80vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
