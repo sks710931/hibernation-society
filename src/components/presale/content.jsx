@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import { PresaleMinter } from "./minter";
 import "./presale.scss";
 import { PresaleTimer } from "./timer";
