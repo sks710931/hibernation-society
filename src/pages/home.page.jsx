@@ -4,6 +4,7 @@ import { Images } from '../components/images';
 import { Minter } from '../components/minter';
 import { Perks } from '../components/perks';
 import { RoadmapOne } from '../components/roadmap/roadmap-one';
+import { RoadmapTwo } from '../components/roadmap/roadmap-two';
 import { Team } from '../components/team';
 import { Timer } from '../components/timer';
 import { Welcome } from '../components/welcome';
@@ -25,6 +26,7 @@ export const Home = () => {
            
         <Team />
         <RoadmapOne />
+        <RoadmapTwo />
         </div>
     );
 }
