@@ -97,12 +97,15 @@ export const Minter = () => {
 
   useEffect(() => {
     const runEventsTracking = async () => {
+      
       const signer = await library.getSigner();
       const NFT = new Contract(NFTContract, abi.abi, signer);
-      NFT.on("CreateHibernationBear", async () => {
+       NFT.on("CreateHibernationBear", async () => {
+        
         getYourBalance();
         getTotalMinted();
       });
+     
     };
     if (library && account) {
       runEventsTracking();
@@ -123,7 +126,7 @@ export const Minter = () => {
         const NFT = new Contract(NFTContract, abi.abi, signer);
         const txResult = await NFT.mint( mints,overRides);
         await txResult.wait();
-        toast.success(`{mints} Hibernation Bear NFT's minted successfully!`)
+        toast.success(`${mints} Hibernation Bear NFT's minted successfully!`)
       } catch (err) {
         if (err.data) {
           if (err.data.message) {

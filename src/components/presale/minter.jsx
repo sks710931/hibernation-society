@@ -122,7 +122,7 @@ export const PresaleMinter = () => {
         const NFT = new Contract(NFTContract, abi.abi, signer);
         const txResult = await NFT.presaleMint( mints,overRides);
         await txResult.wait();
-        toast.success(`{mints} Hibernation Bear NFT's minted successfully!`)
+        toast.success(`${mints} Hibernation Bear NFT's minted successfully!`)
       } catch (err) {
         if (err.data) {
           if (err.data.message) {
