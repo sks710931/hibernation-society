@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Button, IconButton } from "@mui/material";
 import { Container } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
@@ -7,9 +8,15 @@ import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import { useWeb3React } from "@web3-react/core";
 import { injectedConnector } from "../../connectors/injected-connector";
 import { toast } from "react-toastify";
-
+import {NFTContract} from "../../config/contract";
+import abi from "../../abi/nft.json";
+import { Contract } from "@ethersproject/contracts";
+import {  formatUnits, parseUnits } from "@ethersproject/units";
 export const PresaleMinter = () => {
   const [mints, setMints] = useState(1);
+  const [totalMints, setTotalMints] = useState(0);
+  const [nftBalance, setNftBalance] = useState(0);
+
   const handleAddMint = () => {
     if (mints < 5) {
       setMints(mints + 1);
@@ -20,11 +27,11 @@ export const PresaleMinter = () => {
       setMints(mints - 1);
     }
   };
-  const { activate, account, error } = useWeb3React();
+  const { activate, account, error, library } = useWeb3React();
   const handleConnect = () => {
     try {
      if(account){
-        console.log("Already connected")
+        handleMint();
      }else{
       activate(injectedConnector);
      }
@@ -53,15 +60,96 @@ export const PresaleMinter = () => {
     }
   }, [error]);
 
-  
-  const price = 65;
+  const getTotalMinted = async () => {
+    if (library) {
+      try {
+        const signer = await library.getSigner();
+        const NFT = new Contract(NFTContract, abi.abi, signer);
+        const totalMint = await NFT.totalMint();
+        setTotalMints(Number(formatUnits(totalMint, 0)));
+        
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+  const getYourBalance = async () => {
+    if(library && account){
+      try{
+        const signer = await library.getSigner();
+        const NFT = new Contract(NFTContract, abi.abi, signer);
+        const bal = await NFT.balanceOf(account);
+        setNftBalance(Number(formatUnits(bal, 0 )));
+      }catch(err){
+        console.log(err);
+      }
+    }
+  }
+  useEffect(() => {
+    getTotalMinted();
+  }, [library]);
+
+  useEffect(() => {
+    getYourBalance();
+  }, [library, account]);
+
+  useEffect(() => {
+    const runEventsTracking = async () => {
+      const signer = await library.getSigner();
+      const NFT = new Contract(NFTContract, abi.abi, signer);
+      NFT.on("CreateHibernationBear" , async () => {
+        getYourBalance();
+        getTotalMinted();
+      })
+    }
+    if(library && account){
+      runEventsTracking()
+    }
+  }, [library, account]);
+
+  const getPriceValue =() => {
+    const value = mints*price;
+    return value.toString();
+  } 
+  const handleMint = async () => {
+    if (library && account) {
+      try {
+        let overRides = {
+          value: parseUnits(getPriceValue(), "ether"),
+        };
+        const signer = await library.getSigner();
+        const NFT = new Contract(NFTContract, abi.abi, signer);
+        const txResult = await NFT.presaleMint( mints,overRides);
+        await txResult.wait();
+        toast.success(`{mints} Hibernation Bear NFT's minted successfully!`)
+      } catch (err) {
+        if (err.data) {
+          if (err.data.message) {
+            toast.error(err.data.message);
+          }
+        } else if (err.message) {
+          toast.error(err.message);
+        } else {
+          toast.error("Enter a valid amount.");
+        }
+      }
+    }
+  };
+  const price = 0.065;
   return (
     <div className="minter-container">
       <Container style={{ height: "100%" }}>
         <div className="minter">
           <div className="minter-row">
             <span className="mint-counter">
-              <b>0</b> / 7000 MINTED
+              <b>{totalMints}</b> / 7000 MINTED
+            </span>
+            
+          </div>
+          <div className="minter-row">
+          <span className="mint-counter">
+              You have: <b>{nftBalance}</b> Hibernation Bear NFT's
             </span>
           </div>
           <div className="minter-row">
