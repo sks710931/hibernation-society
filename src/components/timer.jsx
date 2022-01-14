@@ -5,7 +5,7 @@ import { useTimer } from "react-timer-hook";
 const getTime = () => {
   //const datum = new Date(Date.UTC(2022, 0, 28, 11, 0, 0));
   //return datum.getTime();
-  return Date.now() + 60000;
+  return Date.now() + 5000;
 };
 
 export const Timer = ({onComplete}) => {
