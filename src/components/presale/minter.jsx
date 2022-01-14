@@ -52,6 +52,8 @@ export const PresaleMinter = () => {
       }
     }
   }, [error]);
+
+  
   const price = 65;
   return (
     <div className="minter-container">
