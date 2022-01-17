@@ -13,9 +13,11 @@ export const RoadmapOne = () => {
                 <i>Roadmap</i>
               </h1>
               <h2>Q4 2021</h2>
-              <span>– Heavy Marketing push.</span>
-              <span>– 20% of money made goes back into community wallet</span>
-              <span>– Do Giveaways on Twitter.</span>
+              <ul>
+                <li>Heavy Marketing Push – Discord and Social Media Management</li>
+                <li>20% of money made goes back into community wallet</li>
+                <li>Giveaways on Twitter</li>
+              </ul>
             </div>
           </Col>
           <Col md="12" sm="12" lg="5">

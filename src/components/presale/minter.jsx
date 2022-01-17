@@ -136,7 +136,7 @@ export const PresaleMinter = () => {
       }
     }
   };
-  const price = 0.065;
+  const price = 65;
   return (
     <div className="minter-container">
       <Container style={{ height: "100%" }}>

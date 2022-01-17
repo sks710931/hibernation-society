@@ -140,7 +140,7 @@ export const Minter = () => {
       }
     }
   };
-  const price = 0.080;
+  const price = 80;
   return (
     <div className="minter-container">
       <Container style={{ height: "100%" }}>

@@ -12,10 +12,10 @@ export const RoadmapTwo = () => {
             <div className="roadmap-q122-box">
               <h2>Q1 2022</h2>
               <ul>
-                  <li>Begin to make and give out Hibernation Tokens to Members.</li>
-                  <li>Begin to make metaverse.</li>
-                  <li>Do monthly NFT giveaways.</li>
-                  <li>Members get to vote for what future benefit they get to have.</li>
+                  <li>Begin to make and give out Hibernation Tokens to Members</li>
+                  <li>Monthly giveaways</li>
+                  <li>Members vote on future benefits that are provided</li>
+                  <li>Create and Launch Merchandise – NFT Holders</li>
                   <li>Launch NFT collection</li>
                   <li>Holder only chat</li>
 

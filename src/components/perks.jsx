@@ -23,11 +23,7 @@ export const Perks = () => {
                 <li>Free access to giveaways</li>
                 <li>Merchandise is only for holders</li>
                 <li>
-                  Holders will get to create a story with there bear and it will
-                  be displayed on #storywall
-                </li>
-                <li>
-                  Holders will get exclusive accessories in the metaverse (once
+                  Holders will get exclusive accessories in the Metaverse (once
                   it launches)
                 </li>
                 <li>V2 Hibernation collection will only be for V1 holders</li>

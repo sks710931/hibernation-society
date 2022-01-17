@@ -11,9 +11,11 @@ export const RoadmapThree = () => {
             <div className="roadmap-q222-box">
               <h2>Q2 2022</h2>
               <ul>
-                <li>Begin to launch metaverse.</li>
-                <li>Launch V2 Hibernation Collection.</li>
-                <li>Create and Sell Merch.</li>
+                <li>Launch Metaverse</li>
+                <li>Create Toronto City in Decentraland</li>
+                <li>Downtown Toronto/Montreal/New York/Miami parties - NFT holders </li>
+                <li>Exclusive Dinners - NFT holders  </li>
+                <li>Launch V2 Hibernation Collection</li>
               </ul>
             </div>
           </Col>

@@ -20,15 +20,15 @@ export const Welcome = () => {
               </p>
               <p>
                 The Hibernation Society is an exclusive collection brought to
-                you by a unique NFT designer. Even after launch, we will work
-                day and night to keep members happy. When an NFT is bought, the
+                you by a unique NFT designer. Our members will be our priority
+                at all times even after the launch. When an NFT is bought, the
                 buyers become officially a part of the society.
               </p>
             </div>
           </Col>
           <Col md="12" sm="12" lg="4">
             <div className="right-box">
-                <img src={welcomeImg} alt="Welcome" />
+              <img src={welcomeImg} alt="Welcome" />
             </div>
           </Col>
         </Row>
