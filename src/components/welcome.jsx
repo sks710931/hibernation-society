@@ -21,8 +21,8 @@ export const Welcome = () => {
               <p>
                 The Hibernation Society is an exclusive collection brought to
                 you by a unique NFT designer. Our members will be our priority
-                at all times even after the launch. When an NFT is bought, the
-                buyers become officially a part of the society.
+                at all times even after the launch. When NFT's  are bought, the
+                buyers officially become a part of the society.
               </p>
             </div>
           </Col>

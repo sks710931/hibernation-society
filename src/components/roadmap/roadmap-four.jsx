@@ -14,11 +14,10 @@ export const RoadmapFour = () => {
               <ul>
                   <li>Set Up Partnerships with other Projects, Artists,    and key opinion leaders</li>
                   <li>Weekly competition</li>
-
               </ul>
               <br />
               <br />
-              <p>Note: Road map will be updated regularly. Own Hibernation Bear NFT and become a member.</p>
+              <p>Note:<br/>&nbsp;&nbsp;&nbsp; Road map will be updated regularly<br/>&nbsp;&nbsp;&nbsp; Own Hibernation Bear NFT and become a member</p>
             </div>
           </Col>
           <Col md="12" sm="12" lg="5">

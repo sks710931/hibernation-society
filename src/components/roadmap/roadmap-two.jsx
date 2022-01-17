@@ -14,9 +14,10 @@ export const RoadmapTwo = () => {
               <ul>
                   <li>Begin to make and give out Hibernation Tokens to Members</li>
                   <li>Monthly giveaways</li>
+                  
+                  <li>Launch NFT collection</li>
                   <li>Members vote on future benefits that are provided</li>
                   <li>Create and Launch Merchandise – NFT Holders</li>
-                  <li>Launch NFT collection</li>
                   <li>Holder only chat</li>
 
               </ul>

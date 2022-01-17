@@ -15,7 +15,7 @@ export const RoadmapOne = () => {
               <h2>Q4 2021</h2>
               <ul>
                 <li>Heavy Marketing Push – Discord and Social Media Management</li>
-                <li>20% of money made goes back into community wallet</li>
+                <li>20% of money made goes back into Community Wallet</li>
                 <li>Giveaways on Twitter</li>
               </ul>
             </div>
