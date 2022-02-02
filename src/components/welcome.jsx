@@ -16,7 +16,7 @@ export const Welcome = () => {
                 hand-drawn unique NFTs. We understand that every NFT collector
                 wants a new, unique, and worth buying piece of art, we are
                 willing to do just that. Our collection is not like any other.
-                10% of funds will go to sick kids hospitals.
+                10% of funds will go to Sick Kids Hospitals.
               </p>
               <p>
                 The Hibernation Society is an exclusive collection brought to

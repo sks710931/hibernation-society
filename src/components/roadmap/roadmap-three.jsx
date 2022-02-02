@@ -14,6 +14,7 @@ export const RoadmapThree = () => {
                 <li>Launch Metaverse</li>
                 <li>Create Toronto City in Decentraland</li>
                 <li>Downtown Toronto/Montreal/New York/Miami parties - NFT holders </li>
+                <li>Exclusive Streetcar tour of Toronto Downtown - NFT Holders</li>
                 <li>Exclusive Dinners - NFT holders  </li>
                 <li>Launch V2 Hibernation Collection</li>
               </ul>

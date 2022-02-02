@@ -3,7 +3,7 @@ import "./timer.scss";
 import { useTimer } from "react-timer-hook";
 
 const getTime = () => {
-  const datum = new Date(Date.UTC(2022, 0, 28, 21, 0, 0));
+  const datum = new Date(Date.UTC(2022, 1, 18, 21, 0, 0));
   return datum.getTime();
   //return Date.now() + 5000;
 };
